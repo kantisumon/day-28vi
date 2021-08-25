@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-content{
+    min-width: 1300px;
+    margin: auto;
+}
+
+/*    begain Main css */
+
+.body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.header-section{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.header-logo{
+    width: 30%;
+   
+}
+.header-logo a{
+    color: #141694;
+}
+.logo img{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+   
+}
+.logo span{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.header-menu{
+    width: 50%;
+}
+.header-button{
+    width: 20%;
+    
+}
+.header-btn{
+    border: 2px solid rgb(117, 137, 226);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 6px;
+    border-radius: 10px;
+   
+    font-size: 20px;
+}
+.primary-menu{
+
+}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 60px;
+    
+}
+/*   drop down menu css */
+
+
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: rgb(240, 240, 250);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform : scaleY(0) ;
+    transform-origin: top center;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/*  banner section */
+
+.banner-section{
+    background-image: url(https://s3.envato.com/files/257992326/1398161014%20banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    position: relative;
+}
+
+.banner-section::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: ;
+}
+.banner-content{
+    padding-right: 250px;
+    color: #fff;
+}
+.banner-content h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner-content h2{
+    font-size: 60px;
+    margin: 30px 0;
+}
+
+
+.default-btn{
+ color: rgb(147, 157, 158);
+ padding: 20px 30px;
+ background-color: #fff;
+ display: inline-block;
+ font-size: 20px;
+ font-weight: 600;
+ margin-left: 5px;
+ margin-right: 5px;
+ border-radius: 10px;
+}
